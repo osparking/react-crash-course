@@ -11,8 +11,8 @@ const ProductList = () => {
       <ListGroup>
         {products.map((product, index) => (
           <ListGroup.Item key={index} 
-          
-                onClick={() => console.log(product)}>
+                className={selectedIndex === index ? 'active' : ''}
+                onClick={() => setSelectedIndex(index)}>
             <h4>{product.name}</h4>
             <p>가격: ₩{product.price}</p>
             <p>설명: {product.description}</p>
