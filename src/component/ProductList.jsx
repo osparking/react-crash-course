@@ -4,7 +4,9 @@ import products from './ProductData';
 
 const ProductList = () => {
   return (
-    <section>      
+    <section>
+      <h2 className="text-info">범이비누 옵션 목록</h2>
+      <hr />
       <ListGroup>
         {products.map((product, index) => (
           <ListGroup.Item key={index}>
