@@ -9,7 +9,7 @@ const ProductList = () => {
       <hr />
       <ListGroup>
         {products.map((product, index) => (
-          <ListGroup.Item key={index}>
+          <ListGroup.Item key={index} onClick={() => console.log(product)}>
             <h4>{product.name}</h4>
             <p>가격: ₩{product.price}</p>
             <p>설명: {product.description}</p>
